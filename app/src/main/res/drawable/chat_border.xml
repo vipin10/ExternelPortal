@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <rotate
+            android:pivotX="@android:integer/status_bar_notification_info_maxnum">
+            <shape
+                android:shape="rectangle">
+                <solid
+                    android:color="#FFE1FBCA" />
+                <corners android:radius="@dimen/d5"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

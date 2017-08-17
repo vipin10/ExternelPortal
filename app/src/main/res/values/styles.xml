@@ -1,0 +1,26 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#999</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <color name="background">#2F3C50</color>
+
+    <style name="stylee" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+    </style>
+
+    <style name="portalHome" parent="Theme.AppCompat.Light">
+
+    </style>
+
+    <style name="description" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/background</item>
+        <item name="android:statusBarColor">#FF181E29</item>
+        <item name="android:backgroundTint"></item>
+    </style>
+</resources>
+

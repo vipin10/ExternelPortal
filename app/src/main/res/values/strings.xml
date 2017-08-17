@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Externel Portal</string>
+    <string name="my_text"><u>Forget Password?</u></string>
+    <string name="my_text1"><u>Register a New Account</u></string>
+    <string name="pass_reset">We just need your registered Email Id to sent your Password reset instruction</string>
+    <string name="title">Android Developer</string>
+    <string name="cpny_name">Global Hunt Pvt Ltd.</string>
+    <string name="job_desc">1.Exceptional coding skills in Frontend and backend. 2.Advance prificiency in java technology.</string>
+</resources>

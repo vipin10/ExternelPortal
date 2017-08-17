@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_shadow_start_color">
+
+    <RelativeLayout
+        android:id="@+id/allChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2F4F4F">
+
+        <ImageView
+            android:id="@+id/chatter"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wh" />
+
+        <TextView
+            android:id="@+id/chatPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/chatter"
+            android:text="Ankush Kamboj" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="6dp"
+        android:src="@drawable/exit" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/chatBtn"
+        android:textStyle="italic|bold" />
+
+    <ImageButton
+        android:id="@+id/chatBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/send" />
+
+</RelativeLayout>

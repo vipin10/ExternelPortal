@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2f3c52">
+
+                <ImageButton
+                    android:id="@+id/pBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="13dp"
+                    android:background="#2f3c52"
+                    android:onClick="onClick"
+                    android:src="@drawable/hhome" />
+
+                <ImageButton
+                    android:id="@+id/oBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/pBtn"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#2f3c52"
+                    android:onClick="onClick"
+                    android:src="@drawable/menu" />
+
+            </RelativeLayout>
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_above="@+id/relay"
+                android:layout_below="@+id/rll"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp" />
+
+            <RelativeLayout
+                android:id="@+id/relay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:id="@+id/linl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/b1"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/i1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/watch" />
+
+                        <TextView
+                            android:id="@+id/activeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_below="@+id/i1"
+                            android:layout_marginTop="5dp"
+                            android:text="Active Jobs" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/activeText"
+                            android:background="@drawable/b2"
+                            android:textStyle="normal"
+                            android:textColor="#72081d"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:text="View Details" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/b1"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/i1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/watch" />
+
+                        <TextView
+                            android:id="@+id/activeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@android:color/white"
+                            android:layout_marginEnd="10dp"
+                            android:layout_below="@+id/i1"
+                            android:layout_marginTop="5dp"
+                            android:text="Active Jobs" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/activeText"
+                            android:textColor="#72081d"
+                            android:background="@drawable/b2"
+                            android:textStyle="normal"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:text="View Details" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linl"
+                    android:orientation="horizontal"
+                    android:background="#ebdef0"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/b1"
+                        android:layout_gravity="center"
+                        android:elevation="10dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/i1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/watch" />
+
+                        <TextView
+                            android:id="@+id/activeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@android:color/white"
+                            android:layout_below="@+id/i1"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Active Jobs" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/activeText"
+                            android:textStyle="normal"
+                            android:textColor="#72081d"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:background="@drawable/b2"
+                            android:gravity="center"
+                            android:text="View Details" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/b1"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/i1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/watch" />
+
+                        <TextView
+                            android:id="@+id/activeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@android:color/white"
+                            android:layout_below="@+id/i1"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Active Jobs" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#72081d"
+                            android:textStyle="normal"
+                            android:background="@drawable/b2"
+                            android:layout_below="@+id/activeText"
+                            android:padding="5dp"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:text="View Details" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navgationView"
+        style="@style/stylee"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/portal_menu" />
+
+</android.support.v4.widget.DrawerLayout>
